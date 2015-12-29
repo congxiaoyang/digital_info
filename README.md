@@ -2,6 +2,12 @@
 
 <p>该项目由李老师策划、部署,将由1505班全体同学合作完成。</p>
 
+<style>
+	table td{
+		width:100px;
+		height: 40px;
+	}
+</style>
 <table>
 		<thead>
 			<td colspan="2">前端</td>
