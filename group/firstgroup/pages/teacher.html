@@ -1,0 +1,37 @@
+<style>
+	table{
+		border-collapse: collapse;
+		/*float: left;*/
+		text-align: center;
+		margin-top: 40px;
+	}
+	td{
+		width: 200px;
+		height: 50px;
+		font-size: 15px;
+		border:1px solid orange;
+		line-height: 50px;
+	}
+
+</style>
+<h1>教师信息</h1>
+<table>
+	<tr>
+		<td>姓名</td>
+		<td>性别</td>
+		<td>年龄</td>
+		<td>联系电话</td>
+		<td>增加</td>
+		<td>删除</td>
+		<td>修改</td>
+	</tr>
+	<tr ng-repeat="a in user">
+		<td>{{a.name}}</td>
+		<td>{{a.sex}}</td>
+		<td>{{a.age}}</td>
+		<td>{{a.tel}}</td>
+		<td><a href="#">{{a.add}}</a></td>
+		<td><a href="#">{{a.del}}</a></td>
+		<td><a href="#">{{a.cha}}</a></td>
+	</tr>
+</table>

@@ -1,0 +1,15 @@
+.sidebar{float: left;width: 150px;background-color: red;}
+#srh{border-radius: 10px;width:150px;}
+.templatemo-search-form .input-group { position: relative; }
+.fa-search {
+    height:32px;
+    width:32px;
+    border: none;
+    cursor: pointer;
+    color:white;
+    background:transparent;
+    position:absolute;
+    top: 0;
+	left: 0;
+	z-index: 100;
+}

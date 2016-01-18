@@ -1,0 +1,18 @@
+ #nt-title-container {
+ 	width: 200px;
+ 	height: 50px;
+ 	background-color:red;
+ 	border-radius: 20px;
+    }
+/*.date-top {
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.1);
+    float: left;
+    margin-left: -30px;
+    padding-right: 15px;
+}
+.date-top > li {
+    display:inline;
+}*/
+.templatemo-content-container{/*height: 1000px;*//*background-color: #555;*/}
+footer p{text-align: center;}

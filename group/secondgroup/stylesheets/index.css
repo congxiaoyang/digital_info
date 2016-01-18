@@ -1,0 +1,8 @@
+.user-name{font-family: "Marvel",sans-serif; font-size: 14px;width: 10%; height: 24px; line-height: 24px; text-align: left;color: #3A3B36;}
+.login{ width: 10%; margin-left: 80%;}
+.login a{font-family: "Marvel",sans-serif; font-size: 14px; display: block;width: 50%; height: 24px; line-height: 24px; text-align: center;color: #3A3B36; float: left;}
+.content{ width: 100%; margin-top: 20px;}
+.user-name,.login{ float: left;}
+#main{ width: 100%; margin: 0 auto; height: 600px;}
+.banner{background:transparent url("../images/banner-bg.jpg") no-repeat; -webkit-background-size: 100%;
+background-size: 100%;}

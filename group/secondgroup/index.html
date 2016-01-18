@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="stylesheets/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="stylesheets/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="stylesheets/index.css" type="text/css" rel="stylesheet" media="all">
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Plot Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="javascripts/jquery-1.11.1.min.js"></script> 
+<!-- //js -->	
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<!--side-bar-->
+			<div class="col-sm-3 col-md-2 sidebar">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.jpg" alt="logo"/></a>
+				</div>
+				<div class="top-nav">
+					<span class="menu-icon"><img src="images/menu-icon.png" alt=""/></span>	
+					<div class="nav1">
+						<ul class=" nav nav-sidebar">
+							<li class="active"><a href="index.html">首页</a></li>
+							<li><a href="class.html">班级信息</a></li>
+							<li><a href="courseInfo.html">课程信息</a></li>
+							<li><a href="course.html">课程安排</a></li>
+							<li><a href="student.html">学员信息</a></li>
+							<li><a href="teacher.html">教师信息</a></li>
+							<li><a href="add.html">添加</a></li>
+						</ul> 
+						<div class="social-icons">
+							<ul>
+								<li><a href="#"></a></li>
+								<li><a href="#" class="fb"></a></li>
+								<li><a href="#" class="be"></a></li>
+								<li><a href="#" class="gg"></a></li>
+							</ul>	
+						</div>						
+					</div>	
+				</div>
+				<div class="clearfix"> </div>				
+				<p>Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="#" target="_blank" title="第嘉学社">第嘉学社</a></p>
+			</div>
+			<!--//side-bar-->
+			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+				<div class="user-name">欢迎XXX登录</div>
+				<div class="login">
+					<a href="login.html">登录</a>
+					<a href="register.html">注册</a>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+				<!--banner-->
+				<div class="banner">
+					<div class="jumbotron banner-text">
+						<h2>北京第嘉学社</h2>
+						<p>Only master the new mobile Internet era of cutting-edge technology in the future to stand out in the job.</p>
+						<a class="btn btn-primary" href="#" role="button">Read more</a>
+					</div>
+				</div>
+				<!--//banner-->
+				<div class="content">
+				<div id="main"></div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>	
+	</div>	
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="javascripts/bootstrap.js"></script>
+    <script src="javascripts/echarts.js"></script>
+	<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        var option = {
+		   // backgroundColor: '#2c343c',
+
+		    title: {
+		        text: '各学校学员分布情况',
+		        left: 'center',
+		        top: 20,
+		        textStyle: {
+		            //color: '#ccc'
+		            color: '#000'
+		        }
+		    },
+
+		    tooltip : {
+		        trigger: 'item',
+		        formatter: "{a} <br/>{b} : {c} ({d}%)"
+		    },
+
+		    visualMap: {
+		        show: false,
+		        min: 80,
+		        max: 600,
+		        inRange: {
+		            colorLightness: [0, 1]
+		        }
+		    },
+		    series : [
+		        {
+		            name:'访问来源',
+		            type:'pie',
+		            radius : '55%',
+		            center: ['50%', '50%'],
+		            data:[
+		                {value:335, name:'东北石油大学秦皇岛分校'},
+		                {value:310, name:'燕山大学礼仁学院'},
+		                {value:274, name:'河北科技师范学院'},
+		                {value:235, name:'建材学院'},
+		                {value:400, name:'毕业'}
+		            ].sort(function (a, b) { return a.value - b.value}),
+		            roseType: 'angle',
+		            label: {
+		                normal: {
+		                    textStyle: {
+		                        // color: 'rgba(255, 255, 255, 0.3)'
+		                        color: 'rgba(0, 0, 0, 0.8)'
+		                    }
+		                }
+		            },
+		            labelLine: {
+		                normal: {
+		                    lineStyle: {
+		                        //color: 'rgba(255, 255, 255, 0.3)'
+		                        color: 'rgba(0, 0, 0, 0.8)'
+		                    },
+		                    smooth: 0.2,
+		                    length: 10,
+		                    length2: 20
+		                }
+		            },
+		            itemStyle: {
+		                normal: {
+		                    color: '#c23531',
+		                    shadowBlur: 200,
+		                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+		                }
+		            }
+		        }
+		    ]
+		};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+</html>

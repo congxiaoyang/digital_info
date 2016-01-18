@@ -1,0 +1,32 @@
+<style>
+
+	table{border-collapse: collapse;margin-left:50px;margin-top:-35px;width:300px;float: left;}
+	td{border:2px solid gray;text-align: center;color:#39ADB4;}
+	section{width:340px;height: 500px;margin-left:680px;float:left;margin-top:-1220px;}
+	section img{width:80px;height:80px;padding:20px 0 0 20px;}
+	aside{color: blue;font-size:22px;margin-top:-225px;margin-left: 20px;}
+	.row{margin-top: 20px;}
+	.col-sm-8 {margin-top: 20px;}
+	.btn{margin-left: 530px;margin-top: 30px;margin-bottom:30px;}
+	.ic{width:150px;height:150px;padding: 50px 0px 0px 15px;transform:rotate(-15deg)}
+	article img{width: 100%;height:auto;margin-top: -10px;}
+	.cool{margin-top:125px;margin-left: 30px;}
+</style>
+<h1>班级信息</h1>
+<img src="images/3.png" class="ic">
+<table class="table table-hover">
+	    <tr>
+	    	<td>班级编号</td>
+	    	<td>专业</td>
+	    	<td>操作</td>
+	    	<td>操作</td>
+	    </tr>
+    	<tr ng-repeat="data in user">
+    		<td>{{data.class}}</td>
+    		<td>{{data.name}}</td>
+    		<td><input type="button" value="删除"></td>
+    		<td><input type="button" value="修改"></td>
+    	</tr>
+</table>
+<!-- <input type="button" value="添加数据" class="btn"> -->
+</section>

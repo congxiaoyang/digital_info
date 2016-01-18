@@ -1,0 +1,9 @@
+.tab-pane h1{font-size: 18px;text-align:center;}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus,.nav-tabs > li.active > a:link,.nav-tabs > li.active > a:active{outline:none;blr:expression(this.onFocus=this.blur());}
+.tab-content table{width:25%;margin:0 auto;}
+.tab-content table tr{height:50px;}
+.tab-content table tr td{font-size:16px;color:#666;}
+.tab-content table tr td .add{border:1px solid #D95459}
+.tab-content table tr td input{display:block;height:30px;border:1px solid #999;font-size:14px;display:block;width:130%;}
+.tab-content table tr td:first-child{text-align:right;padding-right:15px;font-weight:bold;}
+.tab-content form>input{display:block;width:28%;margin:20px 0 0 40%;height:40px;background: #D95459;border:none;color:#fff;}

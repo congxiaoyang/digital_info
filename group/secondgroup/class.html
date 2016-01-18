@@ -1,0 +1,695 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>班级信息</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  
+</head>
+<body>
+
+<header class="am-topbar admin-header am-topbar-fixed-top">
+  <div class="am-topbar-brand">
+    <strong>第嘉学社</strong> <small>管理系统计划</small>
+  </div>
+
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+  <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+
+    <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-left admin-header-list">
+      <li class="am-active"><a href="#" > <span class="am-icon-home"> 首页</span></a></li> 
+        <li><a href="#"><span class="am-icon-tasks"> 班级信息</span></a></li>
+        <li><a href="#"><span class="am-icon-list-alt"> 课程信息</span></a></li>
+        <li><a href="#"><span class="am-icon-list-alt"> 课程安排</span></a></li>
+        <li><a href="#"><span class="am-icon-bell"> 学员信息</span></a></li>
+        <li><a href="#"><span class="am-icon-user"> 教师信息</span></a></li>
+        <li><a href="#"><span class="am-icon-columns"> 添加</span></a></li>
+        
+    </ul> 
+
+    <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list am-margin-top-0">
+      <li><a href="#">
+        注册
+        </a>
+      </li>
+       <li><a href="#">
+        登录
+        </a>
+        </li>
+     
+      <!-- <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li> -->
+    </ul>
+  </div>
+</header>
+<div class="layout-main">
+  
+
+
+<div class="am-g am-margin-top">
+
+    <div class="am-u-sm-12">
+      <ul class="am-nav am-nav-tabs">
+        <li><a href="#">主页</a></li>
+        <li class="am-active"><a href="#">班级信息</a></li>
+        <li><a href="#">课程信息</a></li>
+        <li><a href="#">课程安排</a></li>
+        <li><a href="#">学员信息</a></li>
+        <li><a href="#">教师信息</a></li>
+        <li><a href="#">添加</a></li>
+      </ul>
+
+
+    </div>
+</div>
+<div action="" class="am-form am-form-inline">
+  <div class="am-g am-margin-top">
+      
+           
+
+              
+             
+
+  </div>
+
+  <div class="am-g am-margin-top">
+      
+            <select id="js-selected" data-am-selected>
+              <option value="a">班级编号</option>
+              <option value="b" selected>1</option>
+              <option value="o">2</option>
+              <option value="m">3</option>
+              
+            </select>
+
+            <select data-am-selected>
+              <option value="a">专业</option>
+              <option value="b">电子商务</option>
+              <option value="o">会计</option>
+              <option value="m">人力资源管理</option>
+              
+            </select>
+
+            
+
+           
+              
+            
+ 
+            <a class="am-btn am-btn-primary" href="javascript:void(0);" >查询</a>
+          
+            <a class="am-btn am-btn-primary" href="#" target="_blank">导出</a>
+
+            <a class="am-btn am-btn-success" id="doc-prompt-toggle">增加</a>
+
+
+
+  </div>
+</div>
+
+
+  
+
+
+
+  <div class="am-g am-margin-top">
+    
+    <table class="am-table am-table-striped  am-table-bordered am-table-hover">
+                <thead>
+                    <tr>
+                        <th>班级序号</th>
+                        <th>专业</th>
+                       
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="">电子商务</a></td>
+                        <td>2012-10-01</td>
+                        <td><a href="">某人某人</a></td>
+                        
+                        <td>
+                          <div class="am-btn-toolbar">
+                            <div class="am-btn-group am-btn-group-xs">
+                              <button class="am-btn am-btn-default am-btn-xs am-text-secondary editorBtn"><span class="am-icon-pencil-square-o"></span> 修改</button>
+                             
+                              <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                            </div>
+                          </div>
+                          
+                          <!-- 弹窗 -->
+<div class="am-modal am-modal-no-btn doc-modal" tabindex="-1" id="doc-modal-1" >
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">某某信息
+      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+    </div>
+    <div class="am-modal-bd">
+
+      <div action="" class="am-form am-form-horizontal" id="form-test1">
+        <fieldset>
+          <!-- <legend>显示验证提示信息</legend> -->
+          <div class="am-form-group">
+            <label for="doc-vld-name-2-1"  class="am-u-sm-4 am-form-label">姓名：</label>
+            <div class="am-u-sm-8">
+            <input type="text" id="doc-vld-name-2-1" minlength="3" placeholder="输入姓名（至少 3 个字符）" required/>
+            <div  class="spe-alert"></div>
+           </div>
+            
+          </div>
+
+          <div class="am-form-group">
+            <label for="doc-vld-email-2-1"  class="am-u-sm-4 am-form-label">邮箱：</label>
+            <div class="am-u-sm-8">
+              <input type="email" id="doc-vld-email-2-1" data-validation-message="自定义提示信息：输入地球上的电子邮箱撒" placeholder="输入邮箱" required/>
+              <div  class="spe-alert"></div>
+            </div>  
+          </div>
+
+          <div class="am-form-group">
+            <label for="doc-vld-url-2-1"  class="am-u-sm-4 am-form-label">网址：</label>
+            <div class="am-u-sm-8">
+              <input type="url" id="doc-vld-url-2-1" placeholder="输入网址" required/>
+              <div  class="spe-alert"></div>
+             </div> 
+          </div>
+
+       
+
+          
+          <div class="am-form-group">
+            <label for="doc-select-1-1"  class="am-u-sm-4 am-form-label">下拉单选框</label>
+            <div class="am-u-sm-8">
+              <select id="doc-select-1-1" required>
+                <option value="">专业</option>
+                <option value="option1">选项一...</option>
+                <option value="option2">选项二.....</option>
+                <option value="option3">选项三........</option>
+              </select>
+              <div  class="spe-alert"></div>
+            </div>  
+          </div>
+
+          <div class="am-form-group">
+             <a class="am-btn am-btn-secondary" href="a.php?a=1" id="submitBtn" >提交</a>
+          </div>
+
+        </fieldset>
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+<!-- 弹窗 -->
+
+
+                      </td>
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="">电子商务</a></td>
+                        <td>2012-10-01</td>
+                        <td><a href="">某人某人</a></td>
+                        
+                        <td>
+                          <div class="am-btn-toolbar">
+                            <div class="am-btn-group am-btn-group-xs">
+                              <button class="am-btn am-btn-default am-btn-xs am-text-secondary editorBtn"><span class="am-icon-pencil-square-o"></span> 修改</button>
+                             
+                              <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                            </div>
+                          </div>
+                          
+<!-- 弹窗 -->
+
+<div class="am-modal am-modal-no-btn doc-modal" tabindex="-1" id="doc-modal-2">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">某某信息
+      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+    </div>
+    <div class="am-modal-bd">
+
+      <div action="" class="am-form am-form-horizontal" id="form-test1">
+        <fieldset>
+          <!-- <legend>显示验证提示信息</legend> -->
+          <div class="am-form-group">
+            <label for="doc-vld-name-2-1"  class="am-u-sm-4 am-form-label">姓名：</label>
+            <div class="am-u-sm-8">
+            <input type="text" id="doc-vld-name-2-1" minlength="3" placeholder="输入用户名（至少 3 个字符）" required/>
+            <div  class="spe-alert"></div>
+           </div>
+            
+          </div>
+
+          <div class="am-form-group">
+            <label for="doc-vld-email-2-1"  class="am-u-sm-4 am-form-label">邮箱：</label>
+            <div class="am-u-sm-8">
+              <input type="email" id="doc-vld-email-2-1" data-validation-message="自定义提示信息：输入地球上的电子邮箱撒" placeholder="输入邮箱" required/>
+              <div  class="spe-alert"></div>
+            </div>  
+          </div>
+
+          <div class="am-form-group">
+            <label for="doc-vld-url-2-1"  class="am-u-sm-4 am-form-label">网址：</label>
+            <div class="am-u-sm-8">
+              <input type="url" id="doc-vld-url-2-1" placeholder="输入网址" value="www.baidu.com" required/>
+              <div  class="spe-alert"></div>
+             </div> 
+          </div>
+
+       
+
+          
+          <div class="am-form-group">
+            <label for="doc-select-1-1"  class="am-u-sm-4 am-form-label">下拉单选框</label>
+            <div class="am-u-sm-8">
+              <select id="doc-select-1-1" required>
+                <option value="">专业</option>
+                <option value="option1">选项一...</option>
+                <option value="option2">选项二.....</option>
+                <option value="option3">选项三........</option>
+              </select>
+              <div  class="spe-alert"></div>
+            </div>  
+          </div>
+
+
+          <div class="am-form-group">
+             <a class="am-btn am-btn-secondary" href="a.php?a=1" id="submitBtn" >提交</a>
+          </div>
+
+        </fieldset>
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+<!-- 弹窗 -->
+
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href="">电子商务</a></td>
+                        <td>2012-10-01</td>
+                         <td><a href="">某人某人</a></td>
+                       
+                        
+                      <td>
+                          <div class="am-btn-toolbar">
+                            <div class="am-btn-group am-btn-group-xs">
+                              <button class="am-btn am-btn-default am-btn-xs am-text-secondary editorBtn"><span class="am-icon-pencil-square-o"></span> 修改</button>
+                             
+                              <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                            </div>
+                          </div>
+                          
+                          <!-- 弹窗 -->
+<div class="am-modal am-modal-no-btn doc-modal" tabindex="-1" id="doc-modal-1" >
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">某某信息
+      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+    </div>
+    <div class="am-modal-bd">
+
+      <div action="" class="am-form am-form-horizontal" id="form-test1">
+        <fieldset>
+          <!-- <legend>显示验证提示信息</legend> -->
+          <div class="am-form-group">
+            <label for="doc-vld-name-2-1"  class="am-u-sm-4 am-form-label">姓名：</label>
+            <div class="am-u-sm-8">
+            <input type="text" id="doc-vld-name-2-1" minlength="3" placeholder="输入姓名（至少 3 个字符）" required/>
+            <div  class="spe-alert"></div>
+           </div>
+            
+          </div>
+
+          <div class="am-form-group">
+            <label for="doc-vld-email-2-1"  class="am-u-sm-4 am-form-label">邮箱：</label>
+            <div class="am-u-sm-8">
+              <input type="email" id="doc-vld-email-2-1" data-validation-message="自定义提示信息：输入地球上的电子邮箱撒" placeholder="输入邮箱" required/>
+              <div  class="spe-alert"></div>
+            </div>  
+          </div>
+
+          <div class="am-form-group">
+            <label for="doc-vld-url-2-1"  class="am-u-sm-4 am-form-label">网址：</label>
+            <div class="am-u-sm-8">
+              <input type="url" id="doc-vld-url-2-1" placeholder="输入网址" required/>
+              <div  class="spe-alert"></div>
+             </div> 
+          </div>
+
+       
+
+          
+          <div class="am-form-group">
+            <label for="doc-select-1-1"  class="am-u-sm-4 am-form-label">下拉单选框</label>
+            <div class="am-u-sm-8">
+              <select id="doc-select-1-1" required>
+                <option value="">专业</option>
+                <option value="option1">选项一...</option>
+                <option value="option2">选项二.....</option>
+                <option value="option3">选项三........</option>
+              </select>
+              <div  class="spe-alert"></div>
+            </div>  
+          </div>
+
+          <div class="am-form-group">
+             <a class="am-btn am-btn-secondary" href="a.php?a=1" id="submitBtn" >提交</a>
+          </div>
+
+        </fieldset>
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+<!-- 弹窗 -->
+
+
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href="">电子商务</a></td>
+                        <td>2012-10-01</td>
+                         <td><a href="">某人某人</a></td>
+                        
+                        <td>
+                          <div class="am-btn-toolbar">
+                            <div class="am-btn-group am-btn-group-xs">
+                              <button class="am-btn am-btn-default am-btn-xs am-text-secondary editorBtn"><span class="am-icon-pencil-square-o"></span> 修改</button>
+                             
+                              <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                            </div>
+                          </div>
+                          
+                          <!-- 弹窗 -->
+<div class="am-modal am-modal-no-btn doc-modal" tabindex="-1" id="doc-modal-1" >
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">某某信息
+      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+    </div>
+    <div class="am-modal-bd">
+
+      <div action="" class="am-form am-form-horizontal" id="form-test1">
+        <fieldset>
+          <!-- <legend>显示验证提示信息</legend> -->
+          <div class="am-form-group">
+            <label for="doc-vld-name-2-1"  class="am-u-sm-4 am-form-label">姓名：</label>
+            <div class="am-u-sm-8">
+            <input type="text" id="doc-vld-name-2-1" minlength="3" placeholder="输入姓名（至少 3 个字符）" required/>
+            <div  class="spe-alert"></div>
+           </div>
+            
+          </div>
+
+          <div class="am-form-group">
+            <label for="doc-vld-email-2-1"  class="am-u-sm-4 am-form-label">邮箱：</label>
+            <div class="am-u-sm-8">
+              <input type="email" id="doc-vld-email-2-1" data-validation-message="自定义提示信息：输入地球上的电子邮箱撒" placeholder="输入邮箱" required/>
+              <div  class="spe-alert"></div>
+            </div>  
+          </div>
+
+          <div class="am-form-group">
+            <label for="doc-vld-url-2-1"  class="am-u-sm-4 am-form-label">网址：</label>
+            <div class="am-u-sm-8">
+              <input type="url" id="doc-vld-url-2-1" placeholder="输入网址" required/>
+              <div  class="spe-alert"></div>
+             </div> 
+          </div>
+
+       
+
+          
+          <div class="am-form-group">
+            <label for="doc-select-1-1"  class="am-u-sm-4 am-form-label">下拉单选框</label>
+            <div class="am-u-sm-8">
+              <select id="doc-select-1-1" required>
+                <option value="">专业</option>
+                <option value="option1">选项一...</option>
+                <option value="option2">选项二.....</option>
+                <option value="option3">选项三........</option>
+              </select>
+              <div  class="spe-alert"></div>
+            </div>  
+          </div>
+
+          <div class="am-form-group">
+             <a class="am-btn am-btn-secondary" href="a.php?a=1" id="submitBtn" >提交</a>
+          </div>
+
+        </fieldset>
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+<!-- 弹窗 -->
+
+
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><a href="">电子商务</a></td>
+                        <td>2012-10-01</td>
+                         <td><a href="">某人某人</a></td>
+                        
+                        <td>
+                          <div class="am-btn-toolbar">
+                            <div class="am-btn-group am-btn-group-xs">
+                              <button class="am-btn am-btn-default am-btn-xs am-text-secondary editorBtn"><span class="am-icon-pencil-square-o"></span> 修改</button>
+                             
+                              <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                            </div>
+                          </div>
+                          
+                          <!-- 弹窗 -->
+<div class="am-modal am-modal-no-btn doc-modal" tabindex="-1" id="doc-modal-1" >
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">某某信息
+      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+    </div>
+    <div class="am-modal-bd">
+
+      <div action="" class="am-form am-form-horizontal" id="form-test1">
+        <fieldset>
+          <!-- <legend>显示验证提示信息</legend> -->
+          <div class="am-form-group">
+            <label for="doc-vld-name-2-1"  class="am-u-sm-4 am-form-label">姓名：</label>
+            <div class="am-u-sm-8">
+            <input type="text" id="doc-vld-name-2-1" minlength="3" placeholder="输入姓名（至少 3 个字符）" required/>
+            <div  class="spe-alert"></div>
+           </div>
+            
+          </div>
+
+          <div class="am-form-group">
+            <label for="doc-vld-email-2-1"  class="am-u-sm-4 am-form-label">邮箱：</label>
+            <div class="am-u-sm-8">
+              <input type="email" id="doc-vld-email-2-1" data-validation-message="自定义提示信息：输入地球上的电子邮箱撒" placeholder="输入邮箱" required/>
+              <div  class="spe-alert"></div>
+            </div>  
+          </div>
+
+          <div class="am-form-group">
+            <label for="doc-vld-url-2-1"  class="am-u-sm-4 am-form-label">网址：</label>
+            <div class="am-u-sm-8">
+              <input type="url" id="doc-vld-url-2-1" placeholder="输入网址" required/>
+              <div  class="spe-alert"></div>
+             </div> 
+          </div>
+
+       
+
+          
+          <div class="am-form-group">
+            <label for="doc-select-1-1"  class="am-u-sm-4 am-form-label">下拉单选框</label>
+            <div class="am-u-sm-8">
+              <select id="doc-select-1-1" required>
+                <option value="">专业</option>
+                <option value="option1">选项一...</option>
+                <option value="option2">选项二.....</option>
+                <option value="option3">选项三........</option>
+              </select>
+              <div  class="spe-alert"></div>
+            </div>  
+          </div>
+
+          <div class="am-form-group">
+             <a class="am-btn am-btn-secondary" href="a.php?a=1" id="submitBtn" >提交</a>
+          </div>
+
+        </fieldset>
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+<!-- 弹窗 -->
+
+
+                      </td>
+                    </tr>
+                    
+                    
+
+                </tbody>
+            </table>
+      <div class="am-g am-margin-top">
+        <!--#include virtual="inc/page.html" --> 
+      </div>
+  </div>
+
+  
+
+
+</div>
+
+
+  
+
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+<script>
+var $form = null;
+var formBtn = null; //表单验证标识符
+var $modal1 = null; //弹窗
+var validator = null; //表单验证
+
+
+$(function() {
+ //js控制 select值
+   // var $selected = $('#js-selected');
+   // var $o = $selected.find('option[value="o"]');
+   // $o.attr('selected', true);
+
+  // 设置表单验证
+  $form = $('#form-test1');
+
+   $form.validator({
+
+    onValid: function(validity) {
+      $(validity.field).closest('.am-form-group').find('.spe-alert').hide();
+    },
+
+    onInValid: function(validity) {
+
+      var $field = $(validity.field);
+      var $group = $field.closest('.am-form-group');
+      var $alert = $group.find('.spe-alert');
+      // 使用自定义的提示信息 或 插件内置的提示信息
+      var msg = $field.data('validationMessage') || this.getValidationMessage(validity);
+
+      if (!$alert.length) {
+        $alert = $('<div class="spe-alert"></div>').hide().
+          appendTo($group);
+      }
+
+      $alert.html(msg).show();
+    }
+
+  });
+
+
+
+
+});
+
+$(function() {
+ 
+// 弹窗按钮点击打开弹窗，并设置高度宽度
+
+  $('#doc-prompt-toggle').on('click', function() {
+
+   $modal1 =  $('#doc-modal-1').modal({
+      width: 400,
+      // height: 400,
+      relatedTarget: this
+      
+    });
+
+  });
+
+
+// 提交按钮，表单验证通过 关闭窗口
+  $('#submitBtn').on('click', function(){
+   var formBtn = $form.validator('isFormValid');
+    if(formBtn){
+      $modal1.modal('close');
+      $('.spe-alert').hide();
+    }else{
+      return false;
+    }
+
+  });
+
+ 
+
+ //编辑按钮弹窗
+ $('.editorBtn').each(function(i){
+    $(this).click(function(){
+      $('.doc-modal').eq(i).modal({
+      width: 400,
+      // height: 400,
+      relatedTarget: this
+      
+    });
+    })
+ })
+
+
+});
+
+</script>
+</body>
+</html>

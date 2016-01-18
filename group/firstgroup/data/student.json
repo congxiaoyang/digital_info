@@ -1,0 +1,19 @@
+{
+	"studentList":[
+		{"name":"lee",  "age":22, "sex":"女", "class":"1503", "school":"毕业", "phone":"18798652343"},
+		{"name":"Meng", "age":22, "sex":"女", "class":"1503", "school":"河北科技师范学院","phone":"13462145489"},
+		{"name":"Zhang","age":20, "sex":"男", "class":"1503", "school":"燕山大学","phone":"15690238549"},
+		{"name":"Cong", "age":20, "sex":"女", "class":"1503", "school":"燕山大学","phone":"13067631480"},
+		{"name":"Guo",  "age":20, "sex":"女", "class":"1503", "school":"东北石油","phone":"1870432845"},
+		{"name":"Qi",   "age":20, "sex":"女", "class":"1503", "school":"毕业","phone":"15179427953"},
+		{"name":"Liu",  "age":20, "sex":"女", "class":"1503", "school":"河北科技师范学院","phone":"15703269469"},
+		{"name":"Tan",  "age":20, "sex":"女", "class":"1503", "school":"燕山大学","phone":"15073662269"},
+		{"name":"Gao",  "age":20, "sex":"男", "class":"1503", "school":"燕山大学","phone":"18749427853"},
+		{"name":"Ji",   "age":20, "sex":"男", "class":"1503", "school":"毕业","phone":"15136954220"},
+		{"name":"Cao",  "age":20, "sex":"女", "class":"1503", "school":"河北科技师范学院","phone":"15093482765"},
+		{"name":"Sun",  "age":20, "sex":"男", "class":"1503", "school":"河北科技师范学院","phone":"15663469050"},
+		{"name":"Zhai", "age":20, "sex":"男", "class":"1503", "school":"东北石油","phone":"18705285833"},
+		{"name":"Bian", "age":20, "sex":"女", "class":"1503", "school":"东北石油","phone":"18236942680"},
+		{"name":"Jia",  "age":20, "sex":"男", "class":"1503", "school":"河北科技师范学院","phone":"18247995322"}
+	]
+}

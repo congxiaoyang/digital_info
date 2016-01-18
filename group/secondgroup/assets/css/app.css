@@ -1,0 +1,33 @@
+/* Write your styles */
+.layout-main{width:98%;overflow: hidden;margin:0 auto;}
+
+
+/*表单验证的提示框样式*/
+.spe-alert {
+    position: absolute;
+    z-index: 9999;
+    padding: 5px 10px;
+    background: #F37B1D;
+    min-width: 150px;
+    color: #fff;
+    transition: all 0.15s;
+    box-shadow: 0 0 5px rgba(0,0,0,.15);
+    display: none;
+  }
+
+  .spe-alert:before {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -8px;
+    content: "";
+    border-width: 0 8px 8px;
+    border-color: transparent transparent #F37B1D;
+    border-style: none inset solid;
+  }
+
+
+  /*添加任务样式*/
+  .add-task-wrap{width:900px;margin:0 auto;padding-top:20px;background-color: #f5f5f5;}
